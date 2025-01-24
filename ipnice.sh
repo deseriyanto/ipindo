@@ -7,7 +7,7 @@ url="http://ixp.mikrotik.co.id/download/nice.rsc"
 curl -s $url | grep -oP 'address="\K[^"]+' > nice.txt
 
 # Baris per file
-lines_per_file=10000
+lines_per_file=1000
 
 # Counter untuk file output
 file_counter=1
@@ -31,4 +31,4 @@ git add .
 git commit -m "Update project with latest changes"
 git push origin main
 
-rm -rf nice.txt nice-*
+#rm -rf nice.txt nice-*
