@@ -31,4 +31,4 @@ git add .
 git commit -m "Update project with latest changes"
 git push origin main
 
-#rm -rf nice.txt nice-*
+rm -rf nice.txt nice-*
