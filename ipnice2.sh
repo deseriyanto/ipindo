@@ -12,8 +12,10 @@ lines_per_file=1000
 # Counter untuk file output
 file_counter=1
 
+# Counter untuk baris
+counter=0
+
 # Membaca file input dan memecahnya
-counter = 0
 while IFS= read -r line
 do
     printf '%s\n' "$line" >> "nice-$(printf '%02d' $file_counter).txt"
@@ -27,8 +29,8 @@ do
 done < "nice.txt"
 
 ## push git
-#git add .
-#git commit -m "Update project with latest changes"
-#git push origin main
+git add .
+git commit -m "Update project with latest changes"
+git push origin main
 
-#rm -rf nice.txt nice-*
+rm -rf nice.txt nice-*
