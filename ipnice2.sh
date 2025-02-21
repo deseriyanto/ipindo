@@ -1,6 +1,7 @@
 #!/bin/bash
 
-rm -rf nice.txt nice-*
+find /home/mslist/deseri/ipindo/ -type f -name "nice-*.txt" -exec truncate -s 0 {} \;
+rm -rf nice.txt 
 
 # URL file
 url="http://ixp.mikrotik.co.id/download/nice.rsc"
